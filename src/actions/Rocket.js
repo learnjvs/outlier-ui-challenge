@@ -6,7 +6,7 @@ const serviceUrl = `${SERVICES_URL}/rockets`;
 const api = axios.create();
 
 const getById = function(rocket_id) {
-  api.get(serviceUrl + '/' + rocket_id);
+  return api.get(serviceUrl + '/' + rocket_id);
 };
 
 export const ACTIONS = {
