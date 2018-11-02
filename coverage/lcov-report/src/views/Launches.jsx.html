@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">47.37% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/19</span>
+        <span class='fraction'>9/19</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">83.33% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/6</span>
+        <span class='fraction'>5/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">60% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/5</span>
+        <span class='fraction'>3/5</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">47.37% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/19</span>
+        <span class='fraction'>9/19</span>
       </div>
     </div>
   </div>
@@ -136,8 +136,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -149,37 +149,37 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -206,12 +206,12 @@ class LaunchesView extends Component {
   }
 &nbsp;
   */
-<span class="fstat-no" title="function not covered" >  co</span>mponentDidMount() {
+  componentDidMount() {
     /* fetch data...
     if (this.isMounted()) this.setState(...set the state);
 */
-    const { dispatch, launchesCollection } = <span class="cstat-no" title="statement not covered" >this.props;</span>
-<span class="cstat-no" title="statement not covered" >    fetchLaunchesIfNeeded({ dispatch, launchesCollection });</span>
+    const { dispatch, launchesCollection } = this.props;
+    fetchLaunchesIfNeeded({ dispatch, launchesCollection });
   }
 &nbsp;
 &nbsp;
@@ -222,15 +222,15 @@ class LaunchesView extends Component {
 <span class="cstat-no" title="statement not covered" >    fetchRocketIfNeeded({ dispatch, rocketCollection, rocket_id });</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  ge</span>tContent() {
-    const { launchCollection, rocketCollection } = <span class="cstat-no" title="statement not covered" >this.props;</span>
-<span class="cstat-no" title="statement not covered" >      console.log({launchCollection});</span>
-<span class="cstat-no" title="statement not covered" >    if (!launchCollection || launchCollection.fetching) {</span>
-<span class="cstat-no" title="statement not covered" >      return &lt;div&gt; LOADING &lt;/div&gt;;</span>
+  getContent() {
+    const { launchCollection, rocketCollection } = this.props;
+      console.log({launchCollection});
+    if (!launchCollection || launchCollection.fetching) {
+      return &lt;div&gt; LOADING &lt;/div&gt;;
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (!launchCollection.launches.length) {</span>
-<span class="cstat-no" title="statement not covered" >      return &lt;div&gt; NO DATA &lt;/div&gt;;</span>
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (!launchCollection.launches.length) {
+      return &lt;div&gt; NO DATA &lt;/div&gt;;
     }
 &nbsp;
     let launches = <span class="cstat-no" title="statement not covered" >[];</span>
@@ -252,8 +252,8 @@ class LaunchesView extends Component {
 <span class="cstat-no" title="statement not covered" >    return launches;</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  re</span>nder() {
-<span class="cstat-no" title="statement not covered" >    return (</span>
+  render() {
+    return (
       &lt;div&gt;
         &lt;h2&gt; SpaceX launches &lt;/h2&gt;
         &lt;ul&gt;
@@ -271,7 +271,7 @@ export default ConnectedView(LaunchesView, 'launches');
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Nov 01 2018 18:55:26 GMT-0700 (PDT)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Nov 01 2018 20:38:31 GMT-0700 (PDT)
 </div>
 </div>
 <script src="../../prettify.js"></script>
