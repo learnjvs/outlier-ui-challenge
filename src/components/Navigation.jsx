@@ -10,13 +10,10 @@ const Navigation = () => (
 export default Navigation;
 
 
+
 /*
 
-
-<div>
-  <Link to="/">Launches</Link>
-  <Link to="/launches">Launches</Link>
-  add more as needed
-</div>
+add: 
+  <li><Link to="/rockets">Rockets</Link></li>
 
 */

@@ -5,33 +5,27 @@ import Launch from '../components/Launch';
 import {fetchRocketIfNeeded} from "../actions/Rocket";
 
 class LaunchesView extends Component {
-  /* constructor() {
-    super();
-    this.state = {
 
-    }
-  }
-
-  */
   componentDidMount() {
     /* fetch data...
-    if (this.isMounted()) this.setState(...set the state);
+    if (this.isMounted()) 
 */
     const { dispatch, launchesCollection } = this.props;
     fetchLaunchesIfNeeded({ dispatch, launchesCollection });
   }
 
-
-
+  
   fetchRocket(rocket_id) {
     console.log('fetch rocket ' + rocket_id);
     const { dispatch, rocketCollection } = this.props;
     fetchRocketIfNeeded({ dispatch, rocketCollection, rocket_id });
   }
+  // modularize rocket component
+  // nest rocket component inside the lauch component
 
   getContent() {
     const { launchCollection, rocketCollection } = this.props;
-      console.log({launchCollection});
+       console.log({rocketCollection});
     if (!launchCollection || launchCollection.fetching) {
       return <div> LOADING </div>;
     }
@@ -49,10 +43,10 @@ class LaunchesView extends Component {
       launches.push(
         <Launch {...{
           launch,
-          rocket,
-          fetchRocket: () => this.fetchRocket(launch.rocket.rocket_id)
+          rocket, // remove
+          fetchRocket: () => this.fetchRocket(launch.rocket.rocket_id)  //remove
         }} />
-
+        // nest Rocket component
       )
     }
 

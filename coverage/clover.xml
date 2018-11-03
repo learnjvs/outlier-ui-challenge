@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1541129911486" clover="3.2.0">
-  <project timestamp="1541129911486" name="All files">
-    <metrics statements="83" coveredstatements="56" conditionals="24" coveredconditionals="13" methods="34" coveredmethods="18" elements="141" coveredelements="87" complexity="0" loc="83" ncloc="83" packages="6" files="12" classes="12">
+<coverage generated="1541209605811" clover="3.2.0">
+  <project timestamp="1541209605811" name="All files">
+    <metrics statements="82" coveredstatements="56" conditionals="24" coveredconditionals="15" methods="34" coveredmethods="19" elements="140" coveredelements="90" complexity="0" loc="82" ncloc="82" packages="6" files="12" classes="12">
       <package name="src">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="routes.jsx" path="/Users/helenkang/Downloads/frontend-challenge-master/outlier-ui-challenge-master/src/routes.jsx">
@@ -51,13 +51,13 @@
         </file>
       </package>
       <package name="src.components">
-        <metrics statements="6" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <metrics statements="6" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
         <file name="Launch.jsx" path="/Users/helenkang/Downloads/frontend-challenge-master/outlier-ui-challenge-master/src/components/Launch.jsx">
-          <metrics statements="4" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+          <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
           <line num="4" count="1" type="stmt"/>
-          <line num="6" count="0" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
           <line num="16" count="0" type="stmt"/>
-          <line num="25" count="1" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
         </file>
         <file name="Navigation.jsx" path="/Users/helenkang/Downloads/frontend-challenge-master/outlier-ui-challenge-master/src/components/Navigation.jsx">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -101,7 +101,7 @@
         </file>
       </package>
       <package name="src.views">
-        <metrics statements="27" coveredstatements="17" conditionals="6" coveredconditionals="5" methods="10" coveredmethods="8"/>
+        <metrics statements="26" coveredstatements="16" conditionals="6" coveredconditionals="5" methods="10" coveredmethods="8"/>
         <file name="ConnectedView.jsx" path="/Users/helenkang/Downloads/frontend-challenge-master/outlier-ui-challenge-master/src/views/ConnectedView.jsx">
           <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
           <line num="7" count="1" type="stmt"/>
@@ -112,14 +112,13 @@
           <line num="32" count="1" type="stmt"/>
         </file>
         <file name="Launches.jsx" path="/Users/helenkang/Downloads/frontend-challenge-master/outlier-ui-challenge-master/src/views/Launches.jsx">
-          <metrics statements="19" coveredstatements="9" conditionals="6" coveredconditionals="5" methods="5" coveredmethods="3"/>
+          <metrics statements="18" coveredstatements="8" conditionals="6" coveredconditionals="5" methods="5" coveredmethods="3"/>
           <line num="20" count="1" type="stmt"/>
           <line num="21" count="1" type="stmt"/>
           <line num="27" count="0" type="stmt"/>
           <line num="28" count="0" type="stmt"/>
           <line num="29" count="0" type="stmt"/>
           <line num="33" count="2" type="stmt"/>
-          <line num="34" count="2" type="stmt"/>
           <line num="35" count="2" type="cond" truecount="4" falsecount="0"/>
           <line num="36" count="1" type="stmt"/>
           <line num="39" count="1" type="cond" truecount="1" falsecount="1"/>

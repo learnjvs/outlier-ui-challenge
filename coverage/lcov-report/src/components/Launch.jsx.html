@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">75% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>2/4</span>
+        <span class='fraction'>3/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/2</span>
-      </div>
-      <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
-        <span class="quiet">Functions</span>
-        <span class='fraction'>0/2</span>
+        <span class='fraction'>2/2</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">50% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>2/4</span>
+        <span class='fraction'>3/4</span>
       </div>
     </div>
   </div>
@@ -78,39 +78,12 @@
 33
 34
 35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+36</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -128,34 +101,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -170,72 +116,45 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
 import PropTypes from 'prop-types';
 &nbsp;
-const Launch = <span class="fstat-no" title="function not covered" >({</span>launch, rocket, fetchRocket}) =&gt; {
+const Launch = ({ launch, rocket, fetchRocket }) =&gt; {
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return (</span>
-  
-    &lt;li onClick = { fetchRocket }&gt;
-&nbsp;
-      &lt;h2&gt; { launch.mission_name } &lt;/h2&gt;
-      &lt;div&gt; { launch.rocket.rocket_name } &lt;/div&gt;
-      &lt;div &gt; { launch.rocket.rocket_id } &lt;/div&gt;
-      { rocket &amp;&amp;  &lt;div&gt;
-        &lt;div&gt; rocket { rocket.cost_per_launch } &lt;/div&gt;
-        &lt;div&gt;
-          { rocket.flickr_images.map(<span class="fstat-no" title="function not covered" >(u</span>rl) =&gt; <span class="cstat-no" title="statement not covered" >&lt;img height="50px" style={{padding: '20px', border: '2px solid black'}} src={url} /&gt; </span> ) }
-        &lt;/div&gt;
-      &lt;/div&gt; }
-&nbsp;
-&nbsp;
-    &lt;/li&gt;
+  return (
+    &lt;div&gt;
+      &lt;li&gt;
+        &lt;h2&gt; {launch.mission_name} &lt;/h2&gt;
+        &lt;div&gt; {launch.rocket.rocket_name} &lt;/div&gt;
+        &lt;div&gt; {launch.rocket.rocket_id} &lt;/div&gt;
+        &lt;button type="submit" onClick={fetchRocket}&gt;Show Rocket Info&lt;/button&gt;
+        {rocket &amp;&amp; &lt;div&gt;
+          &lt;div&gt; rocket {rocket.cost_per_launch} &lt;/div&gt;
+          &lt;div&gt;
+            {rocket.flickr_images.map(<span class="fstat-no" title="function not covered" >(u</span>rl) =&gt; <span class="cstat-no" title="statement not covered" >&lt;img height="50px" style={{ padding: '20px', border: '2px solid black' }} src={url} /&gt;)</span>}
+          &lt;/div&gt;
+        &lt;/div&gt;}
+      &lt;/li&gt;
+    &lt;/div&gt;
   );
 }
 &nbsp;
 Launch.propTypes = {
-  launch: PropTypes.object.isRequired,
-  rocket: PropTypes.any.isRequired,
+  launch: PropTypes.shape({
+    mission_name: PropTypes.string,
+    // others
+  }).isRequired,
+  rocket: PropTypes.shape({
+    // stuff
+  }).isRequired,
   fetchRocket: PropTypes.func.isRequired
 };
 &nbsp;
 export default Launch;
-&nbsp;
-// class Launch extends Component {
-//   componentDidMount() {
-//     const { dispatch, launchesCollection } = this.props;
-//     //fetchLaunchesIfNeeded({ dispatch, launchesCollection });
-//   }
-&nbsp;
-//   render() {
-&nbsp;
-//     let launch = this.props.launch;
-//     let fetchRocket = this.props.fetchRocket;
-//     let rocket = this.props.rocket;
-//     return (
-  
-//       &lt;li onClick = { fetchRocket }&gt;
-&nbsp;
-//         &lt;h2&gt; { launch.mission_name } &lt;/h2&gt;
-//         &lt;div&gt; { launch.rocket.rocket_name } &lt;/div&gt;
-//         &lt;div &gt; { launch.rocket.rocket_id } &lt;/div&gt;
-//         { rocket &amp;&amp;  &lt;div&gt;
-//           &lt;div&gt; rocket { rocket.cost_per_launch } &lt;/div&gt;
-//           &lt;div&gt;
-//             { rocket.flickr_images.map((url) =&gt; &lt;img height="50px" style={{padding: '20px', border: '2px solid black'}} src={url} /&gt;  ) }
-//           &lt;/div&gt;
-//         &lt;/div&gt; }
-&nbsp;
-&nbsp;
-//       &lt;/li&gt;
-//     );
-//   }
-// }
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Nov 01 2018 20:38:31 GMT-0700 (PDT)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Nov 02 2018 18:46:45 GMT-0700 (PDT)
 </div>
 </div>
 <script src="../../prettify.js"></script>
